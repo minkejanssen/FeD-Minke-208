@@ -19,10 +19,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Minke Janssen 
 
   #### Je startniveau:
-   Mijn startniveau is blauw (kies uit zwart, rood óf blauw)
+   Mijn startniveau is blauw 
 
   #### Je focus:
- Mijn focus is surface plane (kies uit responsive óf surface plane)
+ Mijn focus is surface plane 
  
 </details>
 
@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/eerstepagina.PNG" width="375px" alt="de homepage van joe & the juice">
+  <img src="readme-images/eerstepagina.png" width="375px" alt="de homepage van joe & the juice">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/tweedepagina.PNG" width="375px" alt="het begin van het menu van joe & the juice">
+  <img src="readme-images/tweedepagina.png" width="375px" alt="het begin van het menu van joe & the juice">
  
 </details>
 
@@ -57,6 +57,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+Er zijn erg veel toegankelijkheidsopties, het is het meest gefocust voor mensen die blind zijn.
 
 </details>
 

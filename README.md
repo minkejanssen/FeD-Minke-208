@@ -57,8 +57,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-Er zijn erg veel toegankelijkheidsopties, het is het meest gefocust voor mensen die blind zijn.
+  Er is duidelijk taalgebruik en buttons zijn duidelijk weergegeven. Als je over een button heen gaat verandert de button van kleur. Bij interactieve elementen is dit ook, alleen is de kleur zo dicht op wit dat je het verschil bijna niet ziet. Dit is dan zeker niet te zien voor mensen met een wat slechter zicht.
+  
+  Er zijn erg veel toegankelijkheidsopties, ten eerste kan je met je toetsenbord door de website heen op de juiste volgorde, voor als je geen muis hebt of motorisch beperkt bent. Je kan alleen niet stukken overslaan, dus moet je door een lange lijst heen, wat onhandig kan zijn. 
 
+ Voor een beter zicht kan je de tekst groter maken, de regelafstand vergroten, de contrastkleuren aanpassen, links highlighten of de verzadiging van kleuren aanpassen. Voor mensen met moeite met lezen, kan je een speciaal lettertype kiezen, de cursor veranderen, de uitlijning van tekst aanpassen of tekstbreedte aanpassen. Overige opties zijn nog afbeeldingen verbergen en animaties uitzetten.  
+ De screenreader werkt prima, alleen af en toe wordt er tekst onnodig herhaald of slecht uitgesproken, waardoor verwarring kan ontstaan. 
+ En als laatste viel mij op dat er geen light/dark mode is. 
+
+ Wat ik dus nog kan verbeteren is de kleur van buttons bij hoveren opvallender maken en een light/dark mode toevoegen. 
 </details>
 
 

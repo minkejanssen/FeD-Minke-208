@@ -97,9 +97,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
+ Wat goed ging is het maken van breakdownschetsen en het begin van de html code van de eerste pagina.
+ Wat ik nog lastig gaat is het downloaden van plaatjes voor op je website of de juiste code daarvoor vinden. Ook het schrijven en indelen van de code voor de footer vind ik nog lastig.
+### Screenshot website: 
+  <img src="readme-images/footerScreenshot.png" width="375px" alt="screenshot over lastig deel">
+  
   ### Agenda voor meeting
   samen met je groepje opstellen
 

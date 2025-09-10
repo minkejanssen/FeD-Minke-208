@@ -6,8 +6,26 @@
 }
 
 
+nav ul{
+	display: flex;
+    justify-content: space-around;
+	text-decoration: none;
+	
+}
+
+nav li{
+	list-style: none;
+    
+}
+
+a{
+	text-decoration: none ;
+}
 
 
+h1{
+	align-items: center;
+}
 
 
 /*********************/

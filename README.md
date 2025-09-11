@@ -115,10 +115,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - toegankelijksheidstest goed uitgewerkt
+  - goede breakdownschets, maar buttons moeten a elementen worden, meer sections of lu weergeven in schets
+  - voor dropdown voor bijv bij de footer summary en details gebruiken
+  - In html per nieuw h2-element een section of lu maken
 
 </details>
 

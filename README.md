@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   link naar de website die je gaat namaken: https://www.joejuice.com 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  homepage  
   <img src="readme-images/eerstepagina.png" width="375px" alt="de homepage van joe & the juice">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  menu pagina   
   <img src="readme-images/tweedepagina.png" width="375px" alt="het begin van het menu van joe & the juice">
  
 </details>

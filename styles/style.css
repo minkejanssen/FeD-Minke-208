@@ -5,10 +5,12 @@
   box-sizing:border-box;  
 }
 
+header{
+	background-color:white;
+	padding: 0.2em;
+}
 
 nav ul{
-	display: flex;
-    justify-content: space-around;
 	text-decoration: none;
 	
 }
@@ -18,15 +20,66 @@ nav li{
     
 }
 
+/* code over achtergrondplaatje van https://www.w3schools.com/cssref/pr_background-image.php en chatgpt */ 
+body {
+	background-image: url("images/AchtergrondHomepage.jpg");
+	background-color: rgb(37, 40, 43);
+    color: white;
+	font-family: 'Montserrat',sans-serif;
+	margin: 0em ;
+}
+
+p{
+	font-weight: 400;
+}
+   
+
 a{
 	text-decoration: none ;
+	color: white;
+	
+}
+
+.zwarteknop{
+	background-color: black;
+	border-radius: 2em;
+	padding:0.5em ;
+	font-weight:500 ;
+}
+
+.menuIcoon{
+	height: 3em;
+	width: 2em;
+}
+
+.witteknop{
+	color: black;
+	background-color: white;
+	border-radius: 2em;
+	padding:0.5em; 
+}
+
+.witteknop :hover{
+color: grey;
+}
+
+.wittesectie{
+	background-color: white ;
+	color: black ;
 }
 
 
-h1{
+h2{
 	align-items: center;
 }
 
+.eersteH2{
+	font-weight: 800;
+}
+
+span{
+	color: pink;
+}
 
 /*********************/
 /* CUSTOM PROPERTIES */

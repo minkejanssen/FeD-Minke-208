@@ -6,9 +6,14 @@
 }
 
 header{
-	background-color:white;
-	padding: 0.2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	
+
 }
+
 
 nav ul{
 	text-decoration: none;
@@ -20,19 +25,59 @@ nav li{
     
 }
 
-/* code over achtergrondplaatje van https://www.w3schools.com/cssref/pr_background-image.php en chatgpt */ 
+
+li{
+	list-style: none ;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+header a{
+	color: black;
+}
+
+footer a{
+	color: white;
+}
+
+
 body {
-	background-image: url("images/AchtergrondHomepage.jpg");
+
 	background-color: rgb(37, 40, 43);
     color: white;
 	font-family: 'Montserrat',sans-serif;
 	margin: 0em ;
 }
+header img {
+	width: 3em;
+	justify-content: center;
+}
+h1{
+	display: none;
+}
 
 p{
 	font-weight: 400;
 }
-   
+
+/* code over achtergrondplaatje van 
+https://www.w3schools.com/cssref/pr_background-image.php */ 
+
+/* code over donkere gloed achtergrond plaatje van chatgpt,
+prompt: "over deze achtergrond image zit een donkere filter 
+volgens mij, hoe kan ik dit in css namaken?" 
+(ik heb een screenshot van het plaatje toegevoegd) */
+.Achtergrondplaatje{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/AchtergrondHomepage.jpg');
+	max-width: 100%;
+	height: auto;
+	background-size: cover;
+	padding-top: 6em;
+	padding-bottom: 5em;
+	text-align: center;
+
+	
+}
 
 a{
 	text-decoration: none ;
@@ -40,13 +85,22 @@ a{
 	
 }
 
+
+
 .zwarteknop{
-	background-color: black;
+    background-color: black;
 	border-radius: 2em;
-	padding:0.5em ;
+	padding: 0.7em ;
 	font-weight:500 ;
 }
 
+div{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	
+}
 .menuIcoon{
 	height: 3em;
 	width: 2em;
@@ -57,6 +111,7 @@ a{
 	background-color: white;
 	border-radius: 2em;
 	padding:0.5em; 
+	margin-bottom: 1em;
 	font-weight: 500;
 }
 
@@ -76,11 +131,132 @@ h2{
 
 .eersteH2{
 	font-weight: 800;
+	text-align: center;
+	
 }
 
-span{
-	color: pink;
+.kleur2epagina{
+	background-color: white;
+	color: black;
 }
+
+.comboOffers{
+	list-style: none;
+	padding: 0;
+	margin: 0; 
+	display:grid;
+	background-color: #feeaf3;
+	border-radius: 2em;
+	margin:1em ;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.comboOffers li{
+	display: grid;
+	grid-template-rows: auto auto;
+	align-items: center;
+	margin-bottom: 3em;
+	background-color: white;
+	border-radius: 2em;
+	margin: 1em ;
+	
+	
+}
+
+.comboOffers li img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 5;
+	width: fit-content;
+	height: 5em;
+	margin-right: 2em;
+}
+
+.comboOffers li p{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	margin-bottom: 0.5em;
+}
+.comboOffers li .prijs{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+
+.comboOffers li h3{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+.comboOffers li .tijd{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	
+}
+
+
+.eten-menu{
+	list-style: none;
+	padding: 0;
+	margin: 0; 
+	display:grid;
+}
+
+.eten-menu li{
+	display: grid;
+	grid-template-rows: auto auto;
+	align-items: center;
+	margin-bottom: 3em;
+	border: 2em;
+	border-color: darkgrey;
+	border-radius: 2em;
+	
+}
+
+.eten-menu li img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	width: fit-content;
+	height: 5em;
+	margin-left: 2em;
+	margin-right: 1em;
+}
+
+.eten-menu li p{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	margin-bottom: -2em ;
+}
+.eten-menu li .prijs{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+.eten-menu li h3{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+span{
+	color: #f7c1d9;
+}
+
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -89,6 +265,11 @@ span{
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+}
+
+footer{
+background-color:rgb(37, 40, 43);
+margin: 0em ;
 }
 
 

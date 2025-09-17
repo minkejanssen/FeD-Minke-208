@@ -84,11 +84,21 @@ a{
 	color: white;
 	
 }
+main a{
+	color: #000000;
+}
+
+
+.zwarteknop :hover a{
+	background-color: darkgrey;
+	color: white;
+}
 
 
 
 .zwarteknop{
     background-color: black;
+	color: white;
 	border-radius: 2em;
 	padding: 0.7em ;
 	font-weight:500 ;
@@ -219,6 +229,10 @@ h2{
 	border: 2em;
 	border-color: darkgrey;
 	border-radius: 2em;
+	background-color: white;
+	border-color: grey ;
+	border: 2em;
+	padding: 1.5em;
 	
 }
 
@@ -253,10 +267,44 @@ h2{
 	grid-row-start: 1;
 	grid-row-end: 2;
 }
+
+ /* hulp van chatgpt prompt:hoe maak ik een scroll animatie dat 
+	de tekst tevoorschijn komt als je scrollt? */
+.vervagen{
+	opacity: 0;            
+	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .vervagen.zichtbaar {
+	opacity: 1;           
+	transform: translateY(0); 
+  }
+
+ 
+  body.darkmode{
+    background-color: aquamarine;
+	color: black
+  }
+
+  #togglebutton{
+	padding: 1em;
+	margin-top: 2em ;
+	border-radius: 1.5em;
+	cursor: pointer;
+  }
 span{
 	color: #f7c1d9;
 }
 
+.carousel{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 4em ;
+	
+	
+}
+  
+ 
 
 /*********************/
 /* CUSTOM PROPERTIES */

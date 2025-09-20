@@ -1,12 +1,16 @@
 // JavaScript Document
 console.log("hi");
 
-const zichtbaarheid = document.querySelectorAll('.vervagen');
-
-// https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp en chatgpt // 
-const togglebutton = document.getElementById('togglebutton');
 
 
-togglebutton.addEventListener('click', () => {
-    document.classList.toggle ("darkmode")
-})
+
+
+
+let Welkom = document.getElementById("welkom");
+
+// voorbeeld code van mijn opdracht van inleiding programmeren van jaar 1 //
+function veranderTekst() {
+    Welkom.textContent = "Welkom bij Joe & the Juice, scroll verder voor meer informatie!"
+}
+
+Welkom.addEventListener("click", veranderTekst);

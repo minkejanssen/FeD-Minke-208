@@ -5,6 +5,16 @@
   box-sizing:border-box;  
 }
 
+
+
+img{
+	width: 99%;
+	height: auto;
+}
+
+
+
+
 header{
 	display: flex;
 	justify-content: space-between;
@@ -89,7 +99,7 @@ main a{
 }
 
 
-.zwarteknop :hover a{
+.zwarteknop a:hover {
 	background-color: darkgrey;
 	color: white;
 }
@@ -102,6 +112,8 @@ main a{
 	border-radius: 2em;
 	padding: 0.7em ;
 	font-weight:500 ;
+	justify-content: center;
+	align-items: center;
 }
 
 div{
@@ -125,7 +137,7 @@ div{
 	font-weight: 500;
 }
 
-.witteknop :hover{
+.witteknop a:hover{
 color: grey;
 }
 
@@ -157,7 +169,7 @@ h2{
 	display:grid;
 	background-color: #feeaf3;
 	border-radius: 2em;
-	margin:1em ;
+	margin-bottom: 1em;
 	justify-content: center;
 	align-items: center;
 	
@@ -170,8 +182,9 @@ h2{
 	margin-bottom: 3em;
 	background-color: white;
 	border-radius: 2em;
-	margin: 1em ;
+	margin-right: 1em;
 	
+
 	
 }
 
@@ -183,38 +196,54 @@ h2{
 	width: fit-content;
 	height: 5em;
 	margin-right: 2em;
+	margin-left: 1em;
 }
 
 .comboOffers li p{
 	grid-column-start: 2;
 	grid-column-end: 3;
-	grid-row-start: 3;
-	grid-row-end: 4;
+	grid-row-start: 4;
+	grid-row-end: 5;
 	margin-bottom: 0.5em;
 }
 .comboOffers li .prijs{
 	grid-column-start: 2;
 	grid-column-end: 3;
-	grid-row-start: 4;
-	grid-row-end: 5;
+	grid-row-start: 5;
+	grid-row-end: 6;
 }
+
+.comboOffers li .tag{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	margin-right: 0.7em;
+	background-color: rgb(250, 215, 132);
+	color: white;
+	padding: 0.5em;
+	border-radius: 2em;
+	font-size: small;
+}
+
 
 .comboOffers li h3{
 	grid-column-start: 2;
 	grid-column-end: 3;
-	grid-row-start: 2;
-	grid-row-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	margin: auto;
 }
 .comboOffers li .tijd{
 	grid-column-start: 2;
 	grid-column-end: 3;
-	grid-row-start: 1;
-	grid-row-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
 	
 }
 
 
-.eten-menu{
+.eten-menu {
 	list-style: none;
 	padding: 0;
 	margin: 0; 
@@ -236,6 +265,8 @@ h2{
 	
 }
 
+
+
 .eten-menu li img{
     grid-column-start: 1;
     grid-column-end: 2;
@@ -247,18 +278,32 @@ h2{
 	margin-right: 1em;
 }
 
-.eten-menu li p{
-	grid-column-start: 2;
-	grid-column-end: 3;
+.eten-menu li .tag{
+	grid-column-start: 3;
+	grid-column-end: 4;
 	grid-row-start: 1;
 	grid-row-end: 2;
-	margin-bottom: -2em ;
+	margin-right: 0.7em;
+	background-color: #000000;
+	color: white;
+	padding: 0.3em;
+	font-size: small;
+	border-radius: 2em;
+	margin-right: 0.7em;
 }
-.eten-menu li .prijs{
+
+.eten-menu li p{
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 2;
 	grid-row-end: 3;
+	margin: 0em;
+}
+.eten-menu li .prijs{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
 }
 
 .eten-menu li h3{
@@ -268,57 +313,158 @@ h2{
 	grid-row-end: 2;
 }
 
- /* hulp van chatgpt prompt:hoe maak ik een scroll animatie dat 
-	de tekst tevoorschijn komt als je scrollt? */
-.vervagen{
-	opacity: 0;            
-	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .vervagen.zichtbaar {
-	opacity: 1;           
-	transform: translateY(0); 
-  }
+.sandwiches{
+	background-color: rgb(219, 220, 245);
+	border-radius: 2em;
+	margin-bottom: 1em;
+	padding-bottom: 0.5em;
+	padding-top: 2em;
+	padding-right: 1em;
+	padding-left: 0.5em;
+}
 
- 
+.sandwiches ul{
+	display:grid;
+	list-style: none;
+	padding: 0;
+	margin: 0; 
+	
+}
+
+
+.sandwiches li{
+	grid-template-rows: auto auto;
+	margin-bottom: 1.5em;
+	border-radius: 2em;
+	background-color: white;
+	border-color: grey ;
+	border: 2em;
+	padding: 1.5em;
+	padding-bottom: 0em;
+	
+}
+
+.sandwiches li img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 5;
+	width: fit-content;
+	height: 5em;
+	
+}
+
+.sandwiches li .tag{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	margin-right: 0.7em;
+	background-color: #000000;
+	color: white;
+	padding: 0.3em;
+	font-size: small;
+	border-radius: 2em;
+	margin-right: 0.7em;
+}
+
+.sandwiches li p{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	margin: 0%;
+}
+.sandwiches li .prijs{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+
+.sandwiches li h3{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	margin-bottom: 0em;
+}
+
+
   body.darkmode{
     background-color: aquamarine;
 	color: black
   }
 
-  #togglebutton{
-	padding: 1em;
-	margin-top: 2em ;
-	border-radius: 1.5em;
-	cursor: pointer;
-  }
+  
 span{
 	color: #f7c1d9;
 }
 
+.carousel img{
+	width: 15em;
+	height: max-content;
+	margin-top: 2em;
+}
+
+/* code met hulp van ai-overzicht van google, 
+wat ik heb ingevuld in google : makkelijke manier 
+carousel maken css */
 .carousel{
 	display: flex;
+	overflow-x: scroll;
 	flex-direction: row;
 	margin-bottom: 4em ;
-	
+	gap: 2em;
 	
 }
-  
- 
 
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+
+
+
+.locatie{
+	background-color: rgb(37, 40, 43);
+	color: white;
+	border-radius: 2em;
+	margin-bottom: 1.5em;
+	margin-top: 2em;
+	
+	padding: 0.5em;
+	
 }
+.locatie h3{
+	font-size: 1em;
+	background-color: rgb(37, 40, 43);
+}
+
+
+
+
+/* code van (het is het tweede code voorbeeld): https://stackoverflow.com/questions/38213329/how-to-add-css3-transition-with-html5-details-summary-tag-reveal */
+details[open] summary ~ * {
+	animation: verschuiven .5s ease-in-out;
+  }
+  
+  @keyframes verschuiven {
+	0%    {opacity: 0; margin-left: -10px}
+	100%  {opacity: 1; margin-left: 0px}
+  }
+
+summary {
+	display: block; 
+   }
+ 
+   
+
+
 
 footer{
+display: flex;
+flex-direction: column;
 background-color:rgb(37, 40, 43);
 margin: 0em ;
 }
+
 
 
 

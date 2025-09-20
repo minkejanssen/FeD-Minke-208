@@ -132,7 +132,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ 
+  Wat goed ging was de layout/vormgeving met css maken, bijvoorbeeld met display grid de menu-pagina vormgeven. 
+  Wat minder goed ging was dat ik het moeilijk vind om de surface plane elementen/effecten en de ligth/dark modus toe te voegen. 
+  <img src="readme-images/Scherm­afbeeldingLayoutMenu.png" width="375px" alt="stukje van de layout van menu-pagina">
 
 
   ### Agenda voor meeting
@@ -148,10 +151,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - goed opweg met html en css
+  - het aantal classes hoe ik het nu gebruik is goed
+  - jezelf niet te moeilijk maken met bijvoorbeeld een carousel maken
+
 
 </details>
 
@@ -166,7 +169,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+  - De hover kleuren van de knoppen heb ik aangepast, ik heb de grijze kleur weggelaten en dan verandert in zwart met wit of wit met zwart (ligt eraan welke kleur de knop is)
+- de light/dark modus was moeilijk om toe te passen, omdat op de homepage is de achtergrond kleur donkergrijs met witte tekst en op de menu-pagina is de achtergron wit en de tekst zwart, daarom heb ik gekozen om......
 </details>
 
 

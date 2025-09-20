@@ -244,8 +244,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. code over achtergrondplaatje van https://www.w3schools.com/cssref/pr_background-image.php  
+  2. code over donkere gloed achtergrond plaatje van chatgpt, prompt: "over deze achtergrond image zit een donkere filter volgens mij, hoe kan ik dit in css namaken?" (ik heb een screenshot van het plaatje toegevoegd)
+  3. code met hulp van ai-overzicht van google, wat ik heb ingevuld in google :
+   makkelijke manier carousel maken css
+  4. code over transition over summary/details van (het is het tweede code voorbeeld): 
+  https://stackoverflow.com/questions/38213329/how-to-add-css3-transition-with-html5-details-summary-tag-reveal
+  5. tekst veranderen met javascrip code: voorbeeld code van mijn opdracht van inleiding programmeren van jaar 1 
+  6. Font van googlefonts
+  7. social media iconen van https://fontawesome.com 
 
 </details>

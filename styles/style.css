@@ -5,6 +5,12 @@
   box-sizing:border-box;  
 }
 
+:root{
+	--color-text: black;
+	--secondary-color-text: white;
+	
+}
+
 
 
 img{
@@ -93,27 +99,33 @@ a{
 	text-decoration: none ;
 	color: white;
 	
+	
 }
 main a{
 	color: #000000;
 }
 
 
-.zwarteknop a:hover {
+.zwarteknop:hover {
 	background-color: white;
 	color: black;
+	transition: 0.7s ;
 }
 
 
 
 .zwarteknop{
-    background-color: black;
+    display: flex;
+	background-color: black;
 	color: white;
 	border-radius: 2em;
 	padding: 0.7em ;
 	font-weight:500 ;
 	justify-content: center;
 	align-items: center;
+	margin-right: 4em;
+	margin-left: 4em;
+
 }
 
 div{
@@ -137,9 +149,10 @@ div{
 	font-weight: 500;
 }
 
-.witteknop a:hover{
+.witteknop:hover{
 color: white;
 background-color: black;
+transition: 0.7s ;
 }
 
 .wittesectie{
@@ -160,7 +173,7 @@ h2{
 
 .kleur2epagina{
 	background-color: white;
-	color: black;
+	color: var(--color-text)
 }
 
 .comboOffers{
@@ -255,13 +268,11 @@ h2{
 	display: grid;
 	grid-template-rows: auto auto;
 	align-items: center;
-	margin-bottom: 3em;
-	border: 2em;
-	border-color: darkgrey;
+	margin: 1em;
+	border: 0.1em solid;
+	border-color: lightgrey;
 	border-radius: 2em;
 	background-color: white;
-	border-color: grey ;
-	border: 2em;
 	padding: 1.5em;
 	
 }
@@ -290,7 +301,7 @@ h2{
 	padding: 0.3em;
 	font-size: small;
 	border-radius: 2em;
-	margin-right: 0.7em;
+	
 }
 
 .eten-menu li p{
@@ -335,7 +346,7 @@ h2{
 
 
 .sandwiches li{
-	
+	display: grid;
 	margin-bottom: 1.5em;
 	border-radius: 2em;
 	background-color: white;
@@ -367,7 +378,7 @@ h2{
 	padding: 0.3em;
 	font-size: small;
 	border-radius: 2em;
-	margin-right: 0.7em;
+	
 }
 
 .sandwiches li p{
@@ -425,6 +436,7 @@ carousel maken css */
 
 
 .locatie{
+	
 	background-color: rgb(37, 40, 43);
 	color: white;
 	border-radius: 2em;
@@ -437,6 +449,34 @@ carousel maken css */
 .locatie h3{
 	font-size: 1em;
 	background-color: rgb(37, 40, 43);
+}
+
+.locatie li {
+	display: grid;
+}
+
+.locatie img{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end:2 ;
+}
+
+.locatie p{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2
+}
+
+.locatie svg{
+	grid-row-start:2 ;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	background-color: white;
+	border-radius: 4em;
+	padding: 0.3em;
 }
 
 
@@ -475,12 +515,12 @@ margin: 0em ;
 
 footer a{
 	margin: 0.5em;
+	
+
 }
 
-i{
-	display: flex;
-	flex-direction: row;
-}
+
+
 
 
 

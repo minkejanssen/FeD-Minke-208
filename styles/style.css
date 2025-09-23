@@ -106,13 +106,6 @@ main a{
 }
 
 
-.zwarteknop:hover {
-	background-color: white;
-	color: black;
-	transition: 0.7s ;
-}
-
-
 
 .zwarteknop{
     display: flex;
@@ -126,6 +119,12 @@ main a{
 	margin-right: 4em;
 	margin-left: 4em;
 
+}
+
+.zwarteknop:hover {
+	background-color: #f7c1d9;
+	color: black;
+	transition: 0.7s ;
 }
 
 div{
@@ -174,6 +173,22 @@ h2{
 .kleur2epagina{
 	background-color: white;
 	color: var(--color-text)
+}
+
+#logo{
+	margin-left: 3em;
+}
+
+/*code van: https://www.youtube.com/watch?v=bE_-Qojri0U */
+
+.scrollanimatie{
+	opacity: 0.15;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.scrollanimatie.zichtbaar{
+	opacity: 1;
+	transition: 0.5s ease-in-out ;
 }
 
 .comboOffers{
@@ -418,6 +433,7 @@ span{
 	width: 15em;
 	height: max-content;
 	margin-top: 2em;
+	display: block;
 }
 
 /* code met hulp van ai-overzicht van google, 
@@ -431,6 +447,24 @@ carousel maken css */
 	gap: 2em;
 	
 }
+
+/* hulp met code om button op plaatje te krijgen met chatGpt, 
+prompt:"hoe zorg ik dat er op een plaatje een knop te zien is?" en "de plaatjes zitten al in een carousel, ul en li" */
+.carousel li{
+	position: relative; /* element behoudt normale plek op pagina */
+}
+
+.carousel .winkelwagenKnop {
+	position: absolute; /* knop vastzetten in gebied */
+	bottom: 1em;
+	left: 50%;
+	transform: translateX(-50%); /* knop naar links verschuiven om  te centreren */
+	background: black;
+	color: white;
+	padding: 0.3em 4em;
+	border-radius: 2em;
+	
+  }
 
 
 
@@ -500,10 +534,6 @@ summary {
    }
 
    
- 
-   
-
-
 
 footer{
 display: flex;
@@ -518,6 +548,8 @@ footer a{
 	
 
 }
+
+
 
 
 

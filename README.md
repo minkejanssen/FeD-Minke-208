@@ -169,7 +169,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-  - De hover kleuren van de knoppen heb ik aangepast, ik heb de grijze kleur weggelaten en dan verandert in zwart met wit of wit met zwart (ligt eraan welke kleur de knop is)
+  - De hover kleuren van de knoppen heb ik aangepast, ik heb de grijze kleur weggelaten en dan verandert in zwart met wit en roze met zwart (ligt eraan welke kleur de knop is), dit contrast is een stuk beter te zien dan grijs met wit of zwart. 
 - de light/dark modus was moeilijk om toe te passen, omdat op de homepage is de achtergrond kleur donkergrijs met witte tekst en op de menu-pagina is de achtergron wit en de tekst zwart, daarom heb ik gekozen om......
 </details>
 

@@ -7,10 +7,25 @@
 
 :root{
 	--color-text: black;
-	--secondary-color-text: white;
+	--color-background: white ; 
+	
 	
 }
 
+/* code van powerpoint over custom properties */
+@media (prefers-color-scheme:dark) {
+	:root {
+		--color-text: black;
+		--color-background: black ; 
+	}
+	
+}
+
+@media (prefers-color-scheme:dark) {
+	.carousel a{
+		color: white;
+	}
+}
 
 
 img{
@@ -18,27 +33,75 @@ img{
 	height: auto;
 }
 
-
-
-
 header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background-color: white;
+	position: relative;
 	
-
 }
+
+header img {
+	width: 3em;
+	justify-content: center;
+}
+
+header a{
+	color: black;
+}
+
+/* code voor hamburgermenu met behulp van codepen
+voorbeeld en hulp van chatgtp, prompt: "ik wil een 
+hamburger menu met css en javascript maken deze css  
+heb ik al wat moet er nog bij dat het werkt?" */
+  
+header nav ul{
+	display: flex;
+	flex-direction: column;
+	translate:-100% 0;
+	transition:translate .3s;
+	position:absolute;
+	top: 3em ;
+	left: 0;
+	width: max-content;
+	padding:0;
+   
+}
+
+header nav.active{
+	transform: translate(0, 0); /* dat er geen verplaatsing is */
+	background-color: white;
+	padding: 1em 2em;
+	display: block;	
+	width: fit-content;
+}
+
+header nav.active ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 
 
 nav ul{
 	text-decoration: none;
+	display:flex;
+    gap:1em;
 	
 }
 
 nav li{
-	list-style: none;
-    
+	list-style: none;   
 }
 
 
@@ -48,26 +111,14 @@ li{
 	grid-column-end: 2;
 }
 
-header a{
-	color: black;
-}
-
-footer a{
-	color: white;
-}
-
 
 body {
-
 	background-color: rgb(37, 40, 43);
     color: white;
 	font-family: 'Montserrat',sans-serif;
 	margin: 0em ;
 }
-header img {
-	width: 3em;
-	justify-content: center;
-}
+
 h1{
 	display: none;
 }
@@ -90,9 +141,11 @@ volgens mij, hoe kan ik dit in css namaken?"
 	background-size: cover;
 	padding-top: 6em;
 	padding-bottom: 5em;
+	text-align: center;	
+}
+.Achtergrondplaatje h2{
+	font-weight: 800;
 	text-align: center;
-
-	
 }
 
 a{
@@ -106,7 +159,6 @@ main a{
 }
 
 
-
 .zwarteknop{
     display: flex;
 	background-color: black;
@@ -118,7 +170,6 @@ main a{
 	align-items: center;
 	margin-right: 4em;
 	margin-left: 4em;
-
 }
 
 .zwarteknop:hover {
@@ -131,8 +182,7 @@ div{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	align-items: center;
-	
+	align-items: center;	
 }
 .menuIcoon{
 	height: 3em;
@@ -154,26 +204,19 @@ background-color: black;
 transition: 0.7s ;
 }
 
-.wittesectie{
-	background-color: white ;
-	color: black ;
-}
 
 
 h2{
 	align-items: center;
 }
 
-.eersteH2{
-	font-weight: 800;
-	text-align: center;
-	
-}
+
 
 .kleur2epagina{
-	background-color: white;
+	background-color: var(--color-background);
 	color: var(--color-text)
 }
+
 
 #logo{
 	margin-left: 3em;
@@ -182,9 +225,12 @@ h2{
 /*code van: https://www.youtube.com/watch?v=bE_-Qojri0U */
 
 .scrollanimatie{
+	padding-top: 4em;
+	padding-bottom: 1em;
 	opacity: 0.15;
 	transition: opacity 0.5s ease-in-out;
 }
+
 
 .scrollanimatie.zichtbaar{
 	opacity: 1;
@@ -379,6 +425,7 @@ h2{
 	grid-row-end: 5;
 	width: fit-content;
 	height: 5em;
+	margin-right: 1em;
 	
 }
 
@@ -467,56 +514,107 @@ prompt:"hoe zorg ik dat er op een plaatje een knop te zien is?" en "de plaatjes 
   }
 
 
+.locaties{
+	background-color: white ;
+	color: black ;
 
+}
 
-.locatie{
-	
+.locaties li{
 	background-color: rgb(37, 40, 43);
 	color: white;
-	border-radius: 2em;
+	border-bottom-left-radius: 2em;
+	border-bottom-right-radius: 2em;
 	margin-bottom: 1.5em;
-	margin-top: 2em;
-	
-	padding: 0.5em;
-	
-}
-.locatie h3{
-	font-size: 1em;
-	background-color: rgb(37, 40, 43);
-}
-
-.locatie li {
 	display: grid;
+	grid-column-start: 1;
+	grid-column: 2;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	
+	
 }
 
-.locatie img{
+ .locaties img{
 	grid-column-start: 1;
 	grid-column-end: 2;
 	grid-row-start: 1;
-	grid-row-end:2 ;
+	grid-row-end: 2;
+	width: 100%;
+	border-top-left-radius: 2em;
+	border-top-right-radius: 2em;
 }
 
-.locatie p{
-	grid-column-start: 2;
-	grid-column-end: 3;
-	grid-row-start: 1;
-	grid-row-end: 2
+.locaties p{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
 }
-
-.locatie svg{
-	grid-row-start:2 ;
+.locaties h3{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
 	grid-row-end: 3;
+}
+
+
+.locaties h4{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	
+}
+
+.locaties li svg{
+	grid-row-start: 3;
+	grid-row-end: 4;
 	grid-column-start: 2;
 	grid-column-end: 3;
 	background-color: white;
 	border-radius: 4em;
 	padding: 0.3em;
+	
 }
 
+.animatie {
+	width: 6em;
+	height: 2em;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	left: 30%;
+	
+  }
 
+  .animatie p{
+	font-weight: bold;
+	font-size: medium;
+	margin-bottom: 3em;
+	margin-left: 6em;
+  }
 
+  /* code voorbeeld van chatgpt, prompt: "kan je een animatie over tekst maken?" en "animatie met tekst draaien met alleen css voorbeeld" */
+  
+  .animatie:active p {
+	position: absolute;
+	transform-origin: center center;
+	transform: translateY(-20px); /* afstand van het midden van de cirkel */
+	animation: rotate 2s linear infinite; /*infinite is dat het oneindig doorgaat
+	met draaien op een constant tempo */
+	color: #f7c1d9;
 
-/* code van (het is het tweede code voorbeeld): https://stackoverflow.com/questions/38213329/how-to-add-css3-transition-with-html5-details-summary-tag-reveal */
+  }
+  
+  @keyframes rotate {
+	0% { transform: rotate(0deg) }
+	100% { transform: rotate(360deg) }
+  }
+
+  /* code van (het is het tweede code voorbeeld): https://stackoverflow.com/questions/38213329/how-to-add-css3-transition-with-html5-details-summary-tag-reveal */
 details[open] summary ~ * {
 	animation: verschuiven .5s ease-in-out;
   }
@@ -536,18 +634,28 @@ summary {
    
 
 footer{
-display: flex;
-flex-direction: column;
 background-color:rgb(37, 40, 43);
 color: white;
 margin: 0em ;
 }
 
 footer a{
-	margin: 0.5em;
-	
-
+	margin: 0.5em;	
+	color: white;
+		
 }
+
+footer nav details ul {
+	display: flex;
+	flex-direction: column; 
+	list-style: none;     
+  }
+
+
+
+
+  
+  
 
 
 

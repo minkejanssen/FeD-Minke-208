@@ -1,9 +1,14 @@
 // JavaScript Document
 console.log("hi");
 
+const button = document.querySelector("header > button");
+const nav = document.querySelector("header > nav");
+
+
 const geluid = document.getElementById("geluid");
+
 // codevoorbeeld over Intersection Observer van: https://www.youtube.com/watch?v=bE_-Qojri0U //
-const tekstDeel = document.getElementsByClassName('scrollanimatie');
+const texts = document.querySelectorAll('.scrollanimatie');
 const observerOptions = {
    root: null,
    rootMargin: '0px', 
@@ -13,13 +18,13 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting){
-            entry.target.clasList.add('zichtbaar');
+            entry.target.classList.add('zichtbaar');
             observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-tekstDeel.forEach(text => {
+texts.forEach(text => {
     observer.observe(text);
 });
 
@@ -35,6 +40,11 @@ function veranderTekst() {
 }
 
 
+button.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+
+
 
 Welkom.addEventListener("click", veranderTekst);
 
@@ -43,4 +53,14 @@ logo.addEventListener("click", function (){
     geluid.currentTime = 0;
     geluid.play();
 });
+
+
+
+
+
+
+
+
+
+
 

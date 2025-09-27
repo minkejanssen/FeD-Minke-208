@@ -75,11 +75,11 @@ header nav.active{
 	padding: 1em 2em;
 	display: block;	
 	width: fit-content;
+	transition: 1s ease-out;
 }
 
 header nav.active ul {
-	display: flex;
-	flex-direction: column;
+	
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -517,32 +517,50 @@ prompt:"hoe zorg ik dat er op een plaatje een knop te zien is?" en "de plaatjes 
 .locaties{
 	background-color: white ;
 	color: black ;
+	
 
 }
 
+.locaties ul {
+	display: flex;
+	gap: 1em;
+}
+
 .locaties li{
+	flex: 0 0 17.5em;
 	background-color: rgb(37, 40, 43);
 	color: white;
 	border-bottom-left-radius: 2em;
 	border-bottom-right-radius: 2em;
 	margin-bottom: 1.5em;
 	display: grid;
+	grid-template-rows: auto auto 1fr auto;
 	grid-column-start: 1;
 	grid-column: 2;
 	grid-row-start: 1;
 	grid-row-end: 3;
 	
 	
+	
 }
 
  .locaties img{
 	grid-column-start: 1;
-	grid-column-end: 2;
+	grid-column-end: 4;
 	grid-row-start: 1;
 	grid-row-end: 2;
 	width: 100%;
+	height: auto;
+	display: block;
+	padding-top: 0em;
+	margin-top: 0em;
+	padding-right: 0em;
+	margin-right: 0em;
 	border-top-left-radius: 2em;
 	border-top-right-radius: 2em;
+	
+	
+	
 }
 
 .locaties p{
@@ -568,13 +586,14 @@ prompt:"hoe zorg ik dat er op een plaatje een knop te zien is?" en "de plaatjes 
 }
 
 .locaties li svg{
-	grid-row-start: 3;
-	grid-row-end: 4;
 	grid-column-start: 2;
 	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
 	background-color: white;
 	border-radius: 4em;
 	padding: 0.3em;
+	margin-left: 0em;
 	
 }
 

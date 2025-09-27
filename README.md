@@ -170,7 +170,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
   - De hover kleuren van de knoppen heb ik aangepast, ik heb de grijze kleur weggelaten en dan verandert in zwart met wit en roze met zwart (ligt eraan welke kleur de knop is), dit contrast is een stuk beter te zien dan grijs met wit of zwart. 
-- de light/dark modus was moeilijk om toe te passen, omdat op de homepage is de achtergrond kleur donkergrijs met witte tekst en op de menu-pagina is de achtergron wit en de tekst zwart, daarom heb ik gekozen om......
+- de light/dark modus was moeilijk om toe te passen, omdat op de homepage is de achtergrond kleur donkergrijs met witte tekst en op de menu-pagina is de achtergron wit en de tekst zwart, daarom heb ik gekozen om op de menupagina een darkmode te maken. 
 </details>
 
 
@@ -183,7 +183,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+   Wat ik lastig vond was de scrollanimatie toevoegen, met een video en hulp van de studentassistent is het gelukkig wel gelukt.
+
+  Wat goed ging was de light/dark modus toevoegen en een geluid op het logo toevoegen als  surfaceplane element
+<img src="readme-images/darkmode.png" width="375px" alt="darkmode op menupagina">
 
 
   ### Agenda voor meeting
@@ -199,10 +202,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - het hamburgermenu moet ik op een andere manier uitwerken dan met details en summary, ik moet met javascript werken.
+  - De class op de eerste h2 moet ik weghalen 
+  - Omdat ik nog geen idee had voor mijn 5e surface plane element, heb ik als tip gekregen om custom theme te kiezen
+  - Verder zag het er al goed uit
 
 </details>
 
@@ -253,5 +256,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   5. tekst veranderen met javascrip code: voorbeeld code van mijn opdracht van inleiding programmeren van jaar 1 
   6. Font van googlefonts
   7. social media iconen van https://fontawesome.com 
+  8. video over intersection observer (voor scrollanimatie) :  https://www.youtube.com/watch?v=bE_-Qojri0U 
+  9. hulp met code om button op plaatje te krijgen met chatGpt, prompt:"hoe zorg ik dat er op een plaatje een knop te zien is?" en "de plaatjes zitten al in een carousel, ul en li"
+  10. code voor hamburgermenu met behulp van codepen voorbeeld en hulp van chatgtp, prompt: "ik wil een hamburger menu met css en javascript maken deze css heb ik al wat moet er nog bij dat het werkt?"
 
 </details>

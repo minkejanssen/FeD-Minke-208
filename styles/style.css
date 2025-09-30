@@ -58,7 +58,6 @@ body.kerst footer{
 }
 
 
-
 img{
 	width: 99%;
 	height: auto;
@@ -142,8 +141,18 @@ h1{
 	display: none;
 }
 
+h2{
+	text-align: center;
+}
+
+h3{
+	text-align: center;
+}
+
 p{
 	font-weight: 400;
+	text-align: center;
+	margin: 0.5em;
 }
 
 /* code over achtergrondplaatje van 
@@ -225,12 +234,6 @@ transition: 0.7s ;
 
 
 
-h2{
-	align-items: center;
-}
-
-
-
 .kleur2epagina{
 	background-color: var(--color-background);
 	color: var(--color-text)
@@ -247,13 +250,13 @@ h2{
 	padding-top: 4em;
 	padding-bottom: 1em;
 	opacity: 0.15;
-	transition: opacity 0.5s ease-in-out;
+	transition: opacity 1s ease-in-out;
 }
 
 
 .scrollanimatie.zichtbaar{
 	opacity: 1;
-	transition: 0.5s ease-in-out ;
+	transition: 1s ease-in-out ;
 }
 
 .comboOffers{
@@ -265,8 +268,7 @@ h2{
 	border-radius: 2em;
 	margin-bottom: 1em;
 	justify-content: center;
-	align-items: center;
-	
+	align-items: center;	
 }
 
 .comboOffers li{
@@ -276,10 +278,7 @@ h2{
 	margin-bottom: 3em;
 	background-color: white;
 	border-radius: 2em;
-	margin-right: 1em;
-	
-
-	
+	margin-right: 1em;	
 }
 
 .comboOffers li img{
@@ -332,8 +331,7 @@ h2{
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 2;
-	grid-row-end: 3;
-	
+	grid-row-end: 3;	
 }
 
 
@@ -353,8 +351,7 @@ h2{
 	border-color: lightgrey;
 	border-radius: 2em;
 	background-color: white;
-	padding: 1.5em;
-	
+	padding: 1.5em;	
 }
 
 
@@ -380,8 +377,7 @@ h2{
 	color: white;
 	padding: 0.3em;
 	font-size: small;
-	border-radius: 2em;
-	
+	border-radius: 2em;	
 }
 
 .eten-menu li p{
@@ -535,9 +531,7 @@ prompt:"hoe zorg ik dat er op een plaatje een knop te zien is?" en "de plaatjes 
 
 .locaties{
 	background-color: white ;
-	color: black ;
-	
-
+	color: black ;	
 }
 
 .locaties ul {
@@ -576,10 +570,7 @@ prompt:"hoe zorg ik dat er op een plaatje een knop te zien is?" en "de plaatjes 
 	padding-right: 0em;
 	margin-right: 0em;
 	border-top-left-radius: 2em;
-	border-top-right-radius: 2em;
-	
-	
-	
+	border-top-right-radius: 2em;	
 }
 
 .locaties p{
@@ -670,7 +661,6 @@ summary {
    }
 
    
-
 footer{
 background-color:rgb(37, 40, 43);
 color: white;
@@ -688,22 +678,6 @@ footer nav details ul {
 	flex-direction: column; 
 	list-style: none;     
   }
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
 
 
 

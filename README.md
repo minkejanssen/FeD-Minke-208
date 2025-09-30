@@ -22,7 +22,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
    Mijn startniveau is blauw 
 
   #### Je focus:
- Mijn focus is surface plane 
+ Mijn focus is surface plane.
+ De elementen die ik heb gekozen zijn: geluid, scrollanimatie, animatie, custom theme en DOM manipulatie. 
  
 </details>
 

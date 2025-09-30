@@ -170,7 +170,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
   - De hover kleuren van de knoppen heb ik aangepast, ik heb de grijze kleur weggelaten en dan verandert in zwart met wit en roze met zwart (ligt eraan welke kleur de knop is), dit contrast is een stuk beter te zien dan grijs met wit of zwart. 
-- de light/dark modus was moeilijk om toe te passen, omdat op de homepage is de achtergrond kleur donkergrijs met witte tekst en op de menu-pagina is de achtergron wit en de tekst zwart, daarom heb ik gekozen om op de menupagina een darkmode te maken. 
+- de light/dark modus was moeilijk om toe te passen, omdat op de homepage is de achtergrond kleur donkergrijs met witte tekst en op de menu-pagina is de achtergron wit en de tekst zwart, daarom heb ik gekozen om alleen op de menupagina een darkmode te maken. 
 </details>
 
 
@@ -219,19 +219,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/home1.png" width="375px" alt="screenshots uitkomst">
+  <img src="readme-images/home2.png" width="375px" alt="screenshots uitkomst">
+  <img src="readme-images/home3.png" width="375px" alt="screenshots uitkomst">
+  <img src="readme-images/menu1.png" width="375px" alt="screenshots uitkomst">
+  <img src="readme-images/menu2.png" width="375px" alt="screenshots uitkomst">
+  <img src="readme-images/menu3.png" width="375px" alt="screenshots uitkomst">
+  <img src="readme-images/menu4.png" width="375px" alt="screenshots uitkomst">
+  <img src="readme-images/menu5.png" width="375px" alt="screenshots uitkomst">
+  <img src="readme-images/footer.png" width="375px" alt="screenshots uitkomst">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+Wat goed ging was het maken van een carousel met een rij fotos, ik dacht namelijk eerst dat dit heel moeilijk ging zijn, maar ik kwam erachter dat dit niet zo was
+  <img src="readme-images/carousel.png" width="375px" alt="carousel voorbeeld">
+Ook ging het maken van een grid op de menupagina goed, ik snapte de code elementen van display grid eerst niet, maar na wat oefenen ging dit best goed
+ <img src="readme-images/menu3.png" width="375px" alt="menukaart">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+Wat ik lastig vond, was het hamburgermenu, het voorbeeld van codepen begreep ik niet goed en werkte niet bij mij, daarom heb ik aan chatgpt hulp gevraagd om de code die ik al had voor het hamburger menu aan te vullen, dit is gelukt. Alleen is het hamburgermenu opengeklapt op de menupagina helaas niet goed te zien door de kleur en doordat er al tekst achter staat, dus dat is dan weer niet goed gelukt. Op de homepage is het het best te zien
+  <img src="readme-images/hamburgermenuHomepage.png" width="375px" alt="foto hamburgermenu op homepage">
+  <img src="readme-images/hamburgermenuMenupagina.png" width="375px" alt="foto hamburgermenu op menu pagina">
 </details>
 
 

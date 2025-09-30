@@ -4,6 +4,9 @@ console.log("hi");
 const button = document.querySelector("header > button");
 const nav = document.querySelector("header > nav");
 
+const logo = document.getElementById("logo");
+
+const kerstThema = document.getElementById("kerstknop")
 
 const geluid = document.getElementById("geluid");
 
@@ -28,16 +31,14 @@ texts.forEach(text => {
     observer.observe(text);
 });
 
-let Lettergrootte = document.querySelector("h3")
 
-let Welkom = document.getElementById("welkom");
+let welkom = document.getElementById("welkom");
 
-document.querySelector("h3").style.fontSize = "20px";
 
 // voorbeeld code van mijn opdracht van inleiding programmeren van jaar 1 //
-function veranderTekst() {
-    Welkom.textContent = "Welcome to Joe & the Juice, scroll down to learn more!"
-}
+  function veranderTekst() {
+      welkom.textContent = "Welcome to Joe & the Juice, scroll down to learn more!";
+  }
 
 
 button.addEventListener("click", () => {
@@ -46,13 +47,18 @@ button.addEventListener("click", () => {
 
 
 
-Welkom.addEventListener("click", veranderTekst);
+
+  welkom.addEventListener("click", veranderTekst);
 
 // voorbeeld code van mijn opdracht van inleiding programmeren van jaar 1 //
 logo.addEventListener("click", function (){
     geluid.currentTime = 0;
     geluid.play();
 });
+
+kerstThema.addEventListener("click", () => {
+    document.body.classList.add("kerst");
+  });
 
 
 

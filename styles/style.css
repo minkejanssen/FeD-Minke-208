@@ -27,6 +27,37 @@
 	}
 }
 
+body {
+	background-color: rgb(37, 40, 43);
+    color: white;
+	font-family: 'Montserrat',sans-serif;
+	margin: 0em ;
+}
+
+body.kerst{
+	background-color: rgb(3, 69, 3);
+	color: white;
+	transition: all 0.5s;
+
+}
+
+#kerstknop{
+	background-color: red;
+	color: white;
+	border: 0.3em solid rgb(5, 99, 5);
+	border-radius: 2em;
+	padding: 1em;
+	font-weight: bold;
+	align-items: center;
+	justify-content: center;
+}
+
+body.kerst footer{
+	background-color: rgb(124, 7, 7);
+	
+}
+
+
 
 img{
 	width: 99%;
@@ -56,47 +87,41 @@ voorbeeld en hulp van chatgtp, prompt: "ik wil een
 hamburger menu met css en javascript maken deze css  
 heb ik al wat moet er nog bij dat het werkt?" */
   
-header nav ul{
+header nav {
+	position: absolute;
+	top: 3em;
+	left: 0;
+	transform: translateX(-100%);  /* zorgt ervoor dat het menu buiten beeld is */
+	padding: 1em 2em;
+	width: fit-content;
+	
+  }
+  
+  header nav ul {
 	display: flex;
 	flex-direction: column;
-	translate:-100% 0;
-	transition:translate .3s;
-	position:absolute;
-	top: 3em ;
-	left: 0;
-	width: max-content;
-	padding:0;
-   
-}
-
-header nav.active{
-	transform: translate(0, 0); /* dat er geen verplaatsing is */
-	background-color: white;
-	padding: 1em 2em;
-	display: block;	
-	width: fit-content;
-	transition: 1s ease-out;
-}
-
-header nav.active ul {
-	
 	list-style: none;
 	margin: 0;
 	padding: 0;
-}
-
-header > button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
+  }
+  
+  header nav.active {
+	transform: translateX(0);   /* zorgt ervoor dat het menu wel in beeld is */
+	transition: ease-in-out 0.5s;  
+	background-color: white;  
+  }
+  
+  header button {
+	border: none;
+	background-color: white;
+  }
+  
 
 
 nav ul{
 	text-decoration: none;
 	display:flex;
-    gap:1em;
+    gap: 1em;
 	
 }
 
@@ -112,12 +137,6 @@ li{
 }
 
 
-body {
-	background-color: rgb(37, 40, 43);
-    color: white;
-	font-family: 'Montserrat',sans-serif;
-	margin: 0em ;
-}
 
 h1{
 	display: none;

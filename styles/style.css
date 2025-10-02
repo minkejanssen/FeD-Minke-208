@@ -136,7 +136,7 @@ li{
 }
 
 
-
+/* voorbeeldcode van : https://www.a11yproject.com/posts/how-to-hide-content/ (eerste voorbeeld) */
 .visually-hidden{
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);

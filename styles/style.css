@@ -137,9 +137,18 @@ li{
 
 
 
-h1{
-	display: none;
-}
+.visually-hidden{
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+    white-space: nowrap;
+    width: 1px;
+	padding: 0;
+    margin: -1px; 
+	
+  }
 
 h2{
 	text-align: center;
@@ -480,11 +489,6 @@ transition: 0.7s ;
 	margin-bottom: 0em;
 }
 
-
-  body.darkmode{
-    background-color: aquamarine;
-	color: black
-  }
 
   
 span{

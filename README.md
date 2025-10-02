@@ -170,8 +170,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-  - De hover kleuren van de knoppen heb ik aangepast, ik heb de grijze kleur weggelaten en dan verandert in zwart met wit en roze met zwart (ligt eraan welke kleur de knop is), dit contrast is een stuk beter te zien dan grijs met wit of zwart. 
-- de light/dark modus was moeilijk om toe te passen, omdat op de homepage is de achtergrond kleur donkergrijs met witte tekst en op de menu-pagina is de achtergron wit en de tekst zwart, daarom heb ik gekozen om alleen op de menupagina een darkmode te maken. 
+  - Het contrast van de hover kleuren van de knoppen heb ik aangepast, ik heb de grijze kleur weggelaten en dan verandert in zwart met wit en roze met zwart (ligt eraan welke kleur de knop is). Dit contrast is een stuk beter te zien dan grijs met wit of zwart. 
+- de light/dark modus was moeilijk om toe te passen, omdat op de homepage is de achtergrond kleur donkergrijs met witte tekst en op de menu-pagina is de achtergrond wit en de tekst zwart, daarom heb ik gekozen om alleen op de menupagina een darkmode te maken. De orginele website heeft geen light/darkmodus, dus dit moest ik zelf verzinnen. 
+
+- Ik heb de h1 kop op visually-hidden gezet, hierdoor is de h1 visueel niet te zien, maar met de screenreader wordt de kop wel voorgelezen. Zo heb ik op de homepage een h1 die joe & the juice website heet, zodat blinde gebruikers weten dat ze zich op deze website bevinden. Op de menupagina heb ik de h1 'menukaart' als titel gegeven, zodat blinden begrijpen dat ze op de menukaart van joe & the juice zijn. 
+
+- Ook de afbeeldingen worden voorgelezen door de screenreader door de alt tekst die ik heb toegevoegd. Op de orginele site is mij opgevallen dat de afbeeldingen worden overgeslagen. Ook de carousel met locatie informatie van de cafes wordt overgeslagen en wordt op mijn website wel voorgelezen. 
+
+- de grootte van de letters en de letterdikte van koppen is nog wel hetzelfde gebleven, omdat die al goed was.
+
+
 </details>
 
 
